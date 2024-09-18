@@ -11,14 +11,12 @@ body {
 
 header {
   width: auto;
-  height: 500px; 
+  height: 500px;
 }
 
-.imagebackground {
-  img {
-    width: 100%;
-    height: auto;
-  }
+.imagebackground img {
+  width: 100%;
+  height: auto;
 }
 
 nav {
@@ -29,20 +27,18 @@ nav {
   height: 67px;
   padding: 10px;
   margin-left: 10px;
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-right: 10px;
-
-    li {
-      display: flex;
-      justify-content: space-around;
-      padding: 15px;
-      font-size: 20px;
-    }
-  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 10px;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 20px;
 }
 
 main {
@@ -58,25 +54,22 @@ main {
   align-items: center;
   width: 80%;
   margin-top: 2px;
-
-  .box1 {
-    width: 70%;
-    text-align: center;
-    font-size: 25px;
-    padding: 0 50px;
-
-    h3 {
-      font-weight: 500;
-      font-size: 30px;
-      padding: 10px;
-    }
-
-    p {
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-weight: 400;
-    }
-  }
+}
+.container .box1 {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  padding: 0 50px;
+}
+.container .box1 h3 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px;
+}
+.container .box1 p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .produto {
@@ -85,17 +78,15 @@ main {
   align-items: center;
   width: 80%;
   margin: 70px 0 30px;
-
-  h3 {
-    font-size: 30px;
-    width: 50%;
-    font-weight: 400; 
-  }
-  
-  figure {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content:flex-start; 
-    gap: 3rem; 
-  }
 }
+.produto h3 {
+  font-size: 30px;
+  width: 50%;
+  font-weight: 400;
+}
+.produto figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: flex-start;
+}/*# sourceMappingURL=style.css.map */
