@@ -14,7 +14,7 @@ header {
   height: 500px;
 }
 
-.imagebackground img {
+.imagembackground img {
   width: 100%;
   height: auto;
 }
@@ -89,4 +89,4 @@ main {
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: flex-start;
-}/*# sourceMappingURL=style.css.map */
+}
