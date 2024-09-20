@@ -13,10 +13,21 @@ header {
   width: auto;
   height: 500px;
 }
+@media (max-width: 1110px) {
+  header {
+    margin-top: 30px;
+    height: 450px;
+  }
+}
 
 .imagembackground img {
   width: 100%;
   height: auto;
+}
+@media (max-width: 1110px) {
+  .imagembackground img {
+    display: none;
+  }
 }
 
 nav {
@@ -28,17 +39,35 @@ nav {
   padding: 10px;
   margin-left: 10px;
 }
+@media (max-width: 1110px) {
+  nav {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
 nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
   margin-right: 10px;
 }
+@media (max-width: 1110px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 nav ul li {
   display: flex;
   justify-content: space-around;
   padding: 15px;
   font-size: 20px;
+}
+@media (max-width: 1110px) {
+  nav ul li {
+    padding: 25px 0;
+    height: 70px;
+  }
 }
 
 main {
@@ -47,6 +76,18 @@ main {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 1110px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1110px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .container {
   display: flex;
@@ -54,6 +95,12 @@ main {
   align-items: center;
   width: 80%;
   margin-top: 2px;
+}
+@media (max-width: 1110px) {
+  .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
 }
 .container .box1 {
   width: 70%;
@@ -64,12 +111,25 @@ main {
 .container .box1 h3 {
   font-weight: 500;
   font-size: 30px;
-  padding: 10px;
+  padding: 10px 0;
+}
+@media (max-width: 1110px) {
+  .container .box1 h3 {
+    margin-top: 20px;
+  }
 }
 .container .box1 p {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 400;
+}
+@media (max-width: 1110px) {
+  .container .box1 p {
+    padding: 20px 0;
+    line-height: 2rem;
+    width: 100%;
+    margin-bottom: 0px;
+  }
 }
 
 .produto {
@@ -79,10 +139,22 @@ main {
   width: 80%;
   margin: 70px 0 30px;
 }
+@media (max-width: 1110px) {
+  .produto {
+    flex-direction: column;
+    width: auto;
+    margin: 15px;
+  }
+}
 .produto h3 {
   font-size: 30px;
   width: 50%;
   font-weight: 400;
+}
+@media (max-width: 1110px) {
+  .produto h3 {
+    width: 100%;
+  }
 }
 .produto figure {
   display: flex;
@@ -90,3 +162,9 @@ main {
   gap: 3rem;
   justify-content: flex-start;
 }
+@media (max-width: 1110px) {
+  .produto figure {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -11,13 +11,21 @@ body {
   
 header {
     width: auto;
-    height: 500px; 
+    height: 500px;
+
+    @media (max-width: 1110px) {
+      margin-top: 30px;
+      height: 450px;
+    }
 }
   
 .imagembackground {
     img {
       width: 100%;
       height: auto;
+      @media (max-width: 1110px) {
+        display: none;
+      }
     }
 }
   
@@ -29,18 +37,30 @@ nav {
     height: 67px;
     padding: 10px;
     margin-left: 10px;
+    @media (max-width: 1110px) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
   
     ul {
       display: flex;
       justify-content: space-around;
       list-style: none;
       margin-right: 10px;
+      @media (max-width: 1110px) {
+        flex-direction: column;
+        align-items: center;
+      }
   
       li {
         display: flex;
         justify-content: space-around;
         padding: 15px;
         font-size: 20px;
+        @media (max-width: 1110px) {
+          padding: 25px 0;
+          height: 70px;
+        }
       }
     }
 }
@@ -50,6 +70,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    @media (max-width: 1110px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 1110px) {
+      display: flex;
+      justify-content: center;
+    }
 }
   
 .container {
@@ -58,7 +86,11 @@ main {
     align-items: center;
     width: 80%;
     margin-top: 2px;
-  
+    @media (max-width: 1110px) {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
     .box1 {
       width: 70%;
       text-align: center;
@@ -68,13 +100,22 @@ main {
       h3 {
         font-weight: 500;
         font-size: 30px;
-        padding: 10px;
+        padding: 10px 0;
+        @media (max-width: 1110px) {
+          margin-top: 20px;
+        }
       }
   
       p {
         font-size: 20px;
         letter-spacing: 2px;
         font-weight: 400;
+        @media (max-width: 1110px) {
+          padding: 20px 0;
+          line-height: 2rem;
+          width: 100%;
+          margin-bottom: 0px;
+        }
       }
     }
 }
@@ -85,17 +126,29 @@ main {
     align-items: center;
     width: 80%;
     margin: 70px 0 30px;
+    @media (max-width: 1110px) {
+      flex-direction: column;
+      width: auto;
+      margin: 15px;
+    }
   
     h3 {
       font-size: 30px;
       width: 50%;
-      font-weight: 400; 
+      font-weight: 400;
+      @media (max-width: 1110px) {
+        width: 100%;
+      }
     }
     
     figure {
       display: flex; 
       flex-wrap: wrap;
       gap: 3rem;
-      justify-content:flex-start;  
+      justify-content:flex-start;
+      @media (max-width: 1110px) {
+        flex-direction: row;
+        margin-top: 50px;
+      }
     }
 }
