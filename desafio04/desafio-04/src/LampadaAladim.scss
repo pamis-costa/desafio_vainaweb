@@ -1,0 +1,62 @@
+// Estilos globais
+body {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://raw.githubusercontent.com/mariaccarolina/TurmaFDV/refs/heads/main/imagens/Imagem%20palacio.png");
+  box-sizing: border-box;
+}
+
+// Estilos do título
+h1 {
+  font-size: 50px;
+  color: #ffffff; // Amarelo para dar destaque
+  width: 100%;
+  text-align: center;
+  font-family: "Sevillana", cursive;
+}
+
+// Estilos principais
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Estilos do container da lâmpada
+  #lampada-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    // Estilos da imagem da lâmpada
+    #lampada-imagem {
+      width: 770px;
+      height: 772px;
+      transition: transform 0.3s ease; // Efeito de transição
+      &:hover {
+        transform: scale(1.1); // Aumenta a imagem ao passar o mouse
+      }
+    }
+  }
+
+  // Estilos do botão
+  #lampada-botao {
+    font-family: "Sevillana", cursive;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0055a3;
+    }
+  }
+}
