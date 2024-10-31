@@ -1,8 +1,0 @@
-{
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/desafio-03/index.html"
-    }
-  ]
-}
