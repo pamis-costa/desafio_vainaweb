@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/desafio-04/index.html"
+      "dest": "/desafio-03/index.html"
     }
   ]
 }
